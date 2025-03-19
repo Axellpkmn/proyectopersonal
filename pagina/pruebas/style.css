@@ -1,0 +1,358 @@
+
+.efecto-glitch {
+    /*propiedades para hacer el efecto "responsivo"*/
+    width: 100%;
+    max-width: 500px;
+    min-width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    /*Propiedades background css3 para que el fondo sea "responsivo"*/
+    background: url(../glitch/glitch-1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*Propiedad Animacion CSS*/
+    -webkit-animation:
+      /*Dos grupos de animaciones*/
+      glitch 7s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite,
+      glitchMotion 7s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite;
+    animation:
+      /*Dos grupos de animaciones*/
+      glitch 7s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite,
+      glitchMotion 7s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite;
+  }
+  .efecto-glitch img {
+    /*la imagen oculta es la que otorga una altura proporcional al div*/
+    width: 8em;
+    height: auto;
+    vertical-align: middle;
+    opacity: 0;
+  }
+  @-webkit-keyframes glitch {
+    
+    /*Nosotros especificamos el intervalo de tiempo en el que queremos que las imagenes de fondo cambien.*/
+    
+    0% {
+      background: url(../glitch/glitch-0.jpg) no-repeat;
+      background-size: contain;
+      border-radius: 50%;
+    }
+    1.5% {
+      background: url(../glitch/glitch-6.jpg) no-repeat;
+      background-size: contain;
+    }
+    1.6% {
+      background: url(../glitch/glitch-3.jpg) no-repeat;
+      background-size: contain; 
+    }
+    1.7%{
+      background: url(../glitch/glitch-5.jpg) no-repeat;
+      background-size: contain;
+    }
+    1.8% {
+      background: url(../glitch/glitch-2.jpg) no-repeat;
+      background-size: contain;
+    }
+    1.9% {
+      background: url(../glitch/glitch-6.jpg) no-repeat;
+      background-size: contain;
+    }
+    2%{
+      background: url(../glitch/glitch-3.jpg) no-repeat;
+      background-size: contain;
+    }
+    2.3%{
+      background: url(../glitch/glitch-5.jpg) no-repeat;
+      background-size: contain;
+    }
+    2.5%{
+      background: url(../glitch/glitch-6.jpg) no-repeat;
+      background-size: contain;
+    }
+    3%{
+      background: url(../glitch/glitch-2.jpg) no-repeat;
+      background-size: contain;
+    }
+    5%{
+      background: url(../glitch/glitch-4.jpg) no-repeat;
+      background-size: contain;
+    }
+  
+  
+    7.6% {
+      background: url(../glitch/glitch-0.jpg) no-repeat;
+      background-size: contain; 
+    }
+    7.7%{
+      background: url(../glitch/glitch-6.jpg) no-repeat;
+      background-size: contain;
+    }
+    7.8% {
+      background: url(../glitch/glitch-2.jpg) no-repeat;
+      background-size: contain;
+    }
+    7.9% {
+      background: url(../glitch/glitch-3.jpg) no-repeat;
+      background-size: contain;
+    }
+    8%{
+      background: url(../glitch/glitch-6.jpg) no-repeat;
+      background-size: contain;
+    }
+    8.3%{
+      background: url(../glitch/glitch-4.jpg) no-repeat;
+      background-size: contain;
+    }
+    8.5%{
+      background: url(../glitch/glitch-0.jpg) no-repeat;
+      background-size: contain;
+    }
+  
+  
+  
+    14.9% {
+      background: url(../glitch/glitch-0.jpg) no-repeat;
+      background-size: contain;
+    }
+    15.5%{
+      background: url(../glitch/glitch-6.jpg) no-repeat;
+      background-size: contain;
+    }
+    15.7% {
+      background: url(../glitch/glitch-0.jpg) no-repeat;
+      background-size: contain;
+    }
+  
+  
+  
+    40.9% {
+      background: url(../glitch/glitch-0.jpg) no-repeat;
+      background-size: contain;
+    }
+    41.5%{
+      background: url(../glitch/glitch-3.jpg) no-repeat;
+      background-size: contain;
+    }
+    42% {
+      background: url(../glitch/glitch-0.jpg) no-repeat;
+      background-size: contain;
+    }
+  
+    70.9% {
+      background: url(../glitch/glitch-0.jpg) no-repeat;
+      background-size: contain;
+    }
+    71.5%{
+      background: url(../glitch/glitch-5.jpg) no-repeat;
+      background-size: contain;
+    }
+    71.8%{
+      background: url(../glitch/glitch-6.jpg) no-repeat;
+      background-size: contain;
+    }
+    72% {
+      background: url(../glitch/glitch-0.jpg) no-repeat;
+      background-size: contain;
+    }
+  
+  
+  }
+  @keyframes glitch {
+    
+    /*Nosotros especificamos el intervalo de tiempo en el que queremos que las imagenes de fondo cambien.*/
+    
+    0% {
+      background: url(../glitch/glitch-0.jpg) no-repeat;
+      background-size: contain;
+    }
+    1.5% {
+      background: url(../glitch/glitch-6.jpg) no-repeat;
+      background-size: contain;
+    }
+    1.6% {
+      background: url(../glitch/glitch-3.jpg) no-repeat;
+      background-size: contain; 
+    }
+    1.7%{
+      background: url(../glitch/glitch-5.jpg) no-repeat;
+      background-size: contain;
+    }
+    1.8% {
+      background: url(../glitch/glitch-2.jpg) no-repeat;
+      background-size: contain;
+    }
+    1.9% {
+      background: url(../glitch/glitch-6.jpg) no-repeat;
+      background-size: contain;
+    }
+    2%{
+      background: url(../glitch/glitch-3.jpg) no-repeat;
+      background-size: contain;
+    }
+    2.3%{
+      background: url(../glitch/glitch-5.jpg) no-repeat;
+      background-size: contain;
+    }
+    2.5%{
+      background: url(../glitch/glitch-6.jpg) no-repeat;
+      background-size: contain;
+    }
+    3%{
+      background: url(../glitch/glitch-2.jpg) no-repeat;
+      background-size: contain;
+    }
+    5%{
+      background: url(../glitch/glitch-4.jpg) no-repeat;
+      background-size: contain;
+    }
+  
+  
+    7.6% {
+      background: url(../glitch/glitch-0.jpg) no-repeat;
+      background-size: contain; 
+    }
+    7.7%{
+      background: url(../glitch/glitch-6.jpg) no-repeat;
+      background-size: contain;
+    }
+    7.8% {
+      background: url(../glitch/glitch-2.jpg) no-repeat;
+      background-size: contain;
+    }
+    7.9% {
+      background: url(../glitch/glitch-3.jpg) no-repeat;
+      background-size: contain;
+    }
+    8%{
+      background: url(../glitch/glitch-6.jpg) no-repeat;
+      background-size: contain;
+    }
+    8.3%{
+      background: url(../glitch/glitch-4.jpg) no-repeat;
+      background-size: contain;
+    }
+    8.5%{
+      background: url(../glitch/glitch-0.jpg) no-repeat;
+      background-size: contain;
+    }
+  
+  
+  
+    14.9% {
+      background: url(../glitch/glitch-0.jpg) no-repeat;
+      background-size: contain;
+    }
+    15.5%{
+      background: url(../glitch/glitch-6.jpg) no-repeat;
+      background-size: contain;
+    }
+    15.7% {
+      background: url(../glitch/glitch-0.jpg) no-repeat;
+      background-size: contain;
+    }
+  
+  
+  
+    40.9% {
+      background: url(../glitch/glitch-0.jpg) no-repeat;
+      background-size: contain;
+    }
+    41.5%{
+      background: url(../glitch/glitch-3.jpg) no-repeat;
+      background-size: contain;
+    }
+    42% {
+      background: url(../glitch/glitch-0.jpg) no-repeat;
+      background-size: contain;
+    }
+  
+    70.9% {
+      background: url(../glitch/glitch-0.jpg) no-repeat;
+      background-size: contain;
+    }
+    71.5%{
+      background: url(../glitch/glitch-5.jpg) no-repeat;
+      background-size: contain;
+    }
+    71.8%{
+      background: url(../glitch/glitch-6.jpg) no-repeat;
+      background-size: contain;
+    }
+    72% {
+      background: url(../glitch/glitch-0.jpg) no-repeat;
+      background-size: contain;
+    }
+  
+  
+  }
+  @-webkit-keyframes glitchMotion {
+  
+    /*Una segunda animacion para crear el efecto de movimiento, tambien puede ir dentro de la primera animacion pero preferi hacerlas por separado*/
+  
+    7% {
+      transform: translateX(0);
+    }
+    7.5% {
+      transform: translateX(0) translateY(5px);
+    }
+    7.9% {
+      transform: translateX(0) translateY(0);
+    }
+  
+    40% {
+      transform: translateX(0);
+    }
+    40.5% {
+      transform: translateX(-12px) translateY(0);
+    }
+    40.9% {
+      transform: translateX(0) translateY(0);
+    }
+  
+    70% {
+      transform: translateX(0);
+    }
+    70.5% {
+      transform: translateX(5px) translateY(0);
+    }
+    70.9% {
+      transform: translateX(0) translateY(0);
+    }
+  
+  }
+  @keyframes glitchMotion {
+  
+    /*Una segunda animacion para crear el efecto de movimiento, tambien puede ir dentro de la primera animacion pero preferi hacerlas por separado*/
+  
+    7% {
+      transform: translateX(0);
+    }
+    7.5% {
+      transform: translateX(0) translateY(5px);
+    }
+    7.9% {
+      transform: translateX(0) translateY(0);
+    }
+  
+    40% {
+      transform: translateX(0);
+    }
+    40.5% {
+      transform: translateX(-12px) translateY(0);
+    }
+    40.9% {
+      transform: translateX(0) translateY(0);
+    }
+  
+    70% {
+      transform: translateX(0);
+    }
+    70.5% {
+      transform: translateX(5px) translateY(0);
+    }
+    70.9% {
+      transform: translateX(0) translateY(0);
+    }
+  
+  }
